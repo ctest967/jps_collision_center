@@ -1,0 +1,499 @@
+<div class="content clearfix">
+                <h3 id="ccc-form-h-0" tabindex="-1" class="title">Contact Info</h3>
+                <fieldset id="ccc-form-p-0" role="tabpanel" aria-labelledby="ccc-form-h-0" class="body" aria-hidden="true" style="display: none;">
+                    <div class="display ta-center tw-book t-4 cg-1 caps pt-1 pt-md-2">Contact Information</div>
+                    <p class="ta-center">All fields are required.</p>
+                    <div class="form-container vin-section">
+                      <div class="col-12 col-md-6 form-input textfield pr-0 pr-md-1">
+                         <input class="user firstName valid" placeholder="First Name" id="ccc-name" type="text" autofocus="" name="firstName" value="" autocomplete="off" required="" aria-required="true" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;" aria-invalid="false">
+                       </div>
+                       <div class="last-name col-12 col-md-6 form-input textfield pr-0 pr-md-1">
+                            <input class="user lastName valid" placeholder="Last Name" type="text" name="lastName" value="" autocomplete="off" required="" aria-required="true" aria-invalid="false">
+                        </div>
+                        <div class="col-12 form-input textfield pr-0 pr-md-1">
+                            <input class="email cccEmail valid" type="email" placeholder="Email" name="cccEmail" id="cccEmail" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$" required="" value="" autocomplete="off" aria-required="true" aria-invalid="false">
+                        </div>
+
+                        <div class="phones col-6 col-sm-9">
+                        <div class="textfield form-input phone-inputs">
+                             <input type="text" class="phone cccPhone valid" placeholder="Home Phone" name="cccHomePhone" id="cccHomePhone" value="" autocomplete="off" required="" aria-required="true" aria-invalid="false">
+                            <ul class="">
+                                    <li class="phone-radio">
+                                   <label class="primary-phone radio t-sm">
+                                   <input type="radio" name="ccc-primary-phone" value="Home" class="cccPrimaryPhone valid" id="ccc-primary-home" required="" aria-required="true"><span class="radio__label t-sm" autocomplete="off">Primary</span>
+                                  </label>
+                                  </li>
+
+                            </ul>
+
+                        	<div class="add-number">+</div>
+
+                            <div class="phone-container" id="mobile-phone-container">
+                                 <input class="mt-1 cccMobilePhone" type="text" placeholder="Mobile Phone" name="cccMobilePhone" id="cccMobilePhone" autocomplete="off">
+                                <ul>
+                                     <li class="phone-radio1" style="margin-left:30px;">
+                                      <label class="primary-phone radio t-sm">
+                                      <a href="/#/" onclick="show1();"><span class="radio__label t-sm" id="remove" style="margin-top:-10px;font-weight:bold;font-size:10px;color:red;margin-left:60px;text-align:right;z-index:999999999;position:absolute;">[remove]</span></a>
+                                      <input type="radio" name="ccc-primary-phone" value="Mobile" class="cccPrimaryPhone valid" id="ccc-primary-mobile" autocomplete="off">
+                                      <span class="radio__label t-sm">Primary</span>
+                                     </label>
+                                     </li>
+
+								</ul>
+                            </div>
+
+
+<script>
+function show1(){
+  document.getElementById('mobile-phone-container').style.display ='none';
+}
+
+</script>
+
+                            <div class="phone-container mt-1" id="work-phone-container">
+                                <input class="cccWorkPhone" type="text" placeholder="Work Phone" name="cccWorkPhone" id="cccWorkPhone" autocomplete="off">
+
+                                <ul id="primary-work-container">
+                                          <li class="phone-radio2">
+                                      <label class="primary-phone radio t-sm">
+                                      <a href="/#/" onclick="show1();"><span class="radio__label t-sm" id="remove" style="margin-top:-10px;font-weight:bold;font-size:10px;color:red;margin-left:60px;text-align:right;z-index:999999999;position:absolute;">[remove]</span></a>
+                                      <input type="radio" class="cccPrimaryPhone valid" name="ccc-primary-phone" value="Work" id="ccc-primary-work" autocomplete="off">
+                                      <span class="radio__label t-sm">Primary</span>
+                                     </label>
+                                     </li>
+                                </ul>
+                            </div>
+
+
+<script>
+function show2(){
+  document.getElementById('work-phone-container').style.display ='none';
+}
+
+</script>
+
+                        </div>
+                        </div>
+                        <div class="textfield form-input col-12 col-md-6  pr-0 pr-md-1">
+                            <input type="text" class="city cccCity valid" placeholder="City" name="cccCity" id="ccc-city" required="" value="" aria-required="true" aria-invalid="false">
+                        </div>
+                        <label class="textfield form-input col-12 col-md-6 relative">
+                              <span class="absolute-right location-field-text pt-1 pr-1 z-1">▾</span>
+                              <select name="cccState" class="state-selection cccState relative b-none col-12 col-sm-12 p-1 p-sm-1 auth-select location-field  tw-min t-min cbgg-white valid" required="" aria-required="true" aria-invalid="false">
+                                  <option class="relative" disabled="" value="" selected="selected"> Select a State *
+                                  </option>
+                                  <option value=""></option>
+                                   <option value="AZ">Arizona</option>
+                                   <option value="CA">California</option>
+                                  <option value="CO">Colorado</option>
+                                  <option value="DE">Delaware</option>
+                                  <option value="WA">District of Columbia</option>
+                                   <option value="FL">Florida</option>
+                                  <option value="GA">Georgia</option>
+                                   <option value="MD">Maryland</option>
+                                   <option value="NV">Nevada</option>
+                                   <option value="NJ">New Jersey</option>
+                                   <option value="NM">New Mexico</option>
+                                   <option value="NY">New York</option>
+                                  <option value="NC">North Carolina</option>
+                                  <option value="OK">Oklahoma</option>
+                                  <option value="PA">Pennsylvania</option>
+                                  <option value="SC">South Carolina</option>
+                                  <option value="TX">Texas</option>
+                                  <option value="VA">Virginia</option>
+                                  <option value="WV">West Virginia</option>
+                                  <option value="WY">Wyoming</option>
+
+
+
+                              </select>
+                        </label>
+                        <div class="col-12">
+                        <div class="textfield form-input col-12 col-md-6  pr-0 pr-md-1">
+                            <input class="zip cccZip valid" type="text" name="cccZip" placeholder="Zip" id="ccc-zip" required="" value="" aria-required="true" aria-invalid="false">
+                        </div>
+                        </div>
+
+                        <div class="col-12">
+                        <label class="form-input col-12 col-md-7 pl-0 pl-md-1">
+                            <p class="cg-blue tw-book">choose one contact method:</p>
+                            </label>
+                            <ul class="ccc-form-list cg-blue tw-book">
+                                <li>
+                                    <label class="radio t-sm" for="ccc-radio-1">
+
+                                    <input class="cg-blue valid" type="radio" name="contactpref" id="ccc-radio-1" value="Email" required="" aria-required="true">
+                                    <span class="radio__label t-sm" autocomplete="off">Email</span>
+
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="radio t-sm" for="ccc-radio-2">
+
+                                    <input class="cg-blue valid" type="radio" name="contactpref" id="ccc-radio-2" value="Phone" required="" aria-required="true">
+                                    <span class="radio__label t-sm" autocomplete="off">Phone</span>
+
+                                    </label>
+                                </li>
+                            </ul>
+                            </div>
+                            </div>
+                </fieldset>
+
+
+  <!-- AUTOFILL CORRECTION -->
+<script>
+
+</script>
+  <!-- AUTOFILL CORRECTION -->
+
+                <style>
+					required {margin-top:-100px !important;}
+			    </style>
+
+                <h3 id="ccc-form-h-1" tabindex="-1" class="title current">Vehicle Info</h3>
+                <fieldset id="ccc-form-p-1" role="tabpanel" aria-labelledby="ccc-form-h-1" class="body current" aria-hidden="false" style="display: table;">
+                <div class="display ta-center tw-book t-4 cg-1 pt-2 caps">Vehicle Information</div>
+                <p class="ta-center">All fields are required.</p>
+                    <div class="form-container vin-section">
+
+                    <div class="col-12">
+                    <div class="textfield form-input">
+                            <input class="vinno" type="text" placeholder="Vehicle ID# (VIN)" name="vinno" id="ccc-vin" data-query="val(vinno)" required="" minlength="17" value="" autocomplete="off" aria-required="true">
+                            <div class="ccc-modal-action">
+                                <a href="#0" class="trigger" data-type="modal-trigger" rel="vin-locations">
+              <span class="q-mark"> <svg xmlns="http://www.w3.org/2000/svg" class="question-mark cgbb-white" viewBox="0 0 18 24">
+                      
+        <path d="M10.737,7.696c-0.222-0.979-1.553-0.891-2.258-0.822c-1.731,0.17-3.441,2.313-3.441,2.313
+                 S4.294,8.815,3.011,7.516c-1.234-1.25-1.586-1.767-1.586-1.767s1.526-2.06,3.755-3.107C7.91,1.357,12.873,0.829,15.313,3.75
+                 c1.925,2.305,2.081,6.273-0.325,7.925c-2.792,1.917-3.031,2.929-3.08,4.057c-0.018,0.429,0.161,0.981-0.264,0.985
+                 c-0.788,0.007-4.08,0.003-5.263,0.001c-0.239,0-0.427-0.191-0.431-0.429c-0.002-0.154-0.412-2.558,0.391-3.654
+                 C7.969,10.415,11.146,9.5,10.737,7.696z"></path>
+        <ellipse cx="8.737" cy="20.238" rx="3.604" ry="3.221"></ellipse>
+
+    
+                  </svg></span>
+                                    Where’s my VIN located?</a>
+                                <span class="ccc-modal-bg"></span>
+                            </div>
+
+
+
+                            <div class="ccc-modal">
+                                <div class="ccc-modal-content">
+                                    <div class="diagram">
+                                        <h1>Vin Locations</h1>
+
+                                        <div class="locations">
+                                            <ul>
+                                                <li><span class="tw-bold">Driver door jam. Open door.</span></li>
+                                             </ul>
+                                             <h3 class="caps t-0 t-sm-1 ta-center">Other Locations</h3>
+                                             <ul class="no-arrows">
+                                              <li class="tw-bold"><span>Driver side interior dash.</span></li>
+                                              <li class="tw-bold mt-2 mt-sm-0"><span>Under the hood at <br>the front of the engine.</span></li>
+                                              <li class="tw-bold mt-3 mt-sm-0"><span>Trunk. Under spare tire.</span></li>
+                                             </ul>
+                                        </div>
+                                        <div class="car">
+                                            <ul>
+                                                <li class="mt-1 mt-sm-0">Driver door jam. Open door.</li>
+                                                <li class="mt-1 mt-sm-0">Driver side interior dash.</li>
+                                                <li class="mt-1 mt-sm-0">Under the hood at <br>the front of the engine.</li>
+                                                <li class="mt-2 mt-sm-0">Trunk.</li>
+                                                <li>Under spare tire.</li>
+                                            </ul>
+
+
+                                            <img src="/img/car.svg" alt="">
+
+                                        </div>
+
+                                    </div>
+                                </div> <!-- cd-modal-content -->
+                            </div> <!-- cd-modal -->
+                            <a href="#0" class="ccc-modal-close">Close</a>
+
+                        </div>
+                        </div>
+                        <div class="col-12">
+                        <div class="textfield form-input">
+                            <input class="year" type="text" name="year" placeholder="Year" id="ccc-year" data-query="val(year)" required="" value="" autocomplete="off" aria-required="true">
+                        </div>
+                        </div>
+                        <div class="col-12">
+                        <div class="textfield form-input">
+                            <input class="manufact" type="text" name="manufact" placeholder="Manufacturer (i.e. Honda, Jeep, etc.)" id="ccc-manufact" data-query="val(manufact)" required="" value="" autocomplete="off" aria-required="true">
+
+                        </div>
+                        </div>
+                        <div class="col-12">
+                        <div class="textfield form-input">
+                            <input class="model" type="text" name="model" placeholder="Model (i.e. Accord, Wrangler, etc.)" id="ccc-model" data-query="val(model)" required="" value="" autocomplete="off" aria-required="true">
+
+                        </div>
+                        </div>
+                        <div class="col-12">
+                        <div class="textfield form-input">
+                            <input class="trim" type="text" name="trim" placeholder="Trim" id="ccc-trim" data-query="val(trim)" value="">
+
+                        </div>
+                        </div>
+                        <div class="col-12">
+                        <div class="textfield form-input">
+                            <label for="options" class="placeholder hidden">Options</label>
+                            <input class="options hidden" type="text" name="options" id="ccc-options" data-query="val(options)" value="" autocomplete="off">
+                        </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <h3 id="ccc-form-h-2" tabindex="-1" class="title">Upload Photos</h3>
+                <fieldset id="ccc-form-p-2" role="tabpanel" aria-labelledby="ccc-form-h-2" class="body" aria-hidden="true" style="display: none;">
+                <div class="display ta-center tw-book t-4 cg-1 pt-2 caps">Upload Photos</div>
+                <p class="ta-center">All fields are required.</p>
+                    <div class="form-container photo-section">
+                        <div class="form-input full instruction"><p class="cg-1">In order to provide you with the most accurate estimate possible, please provide us the following 6 photos of your vehicle.
+                                Simply click an area below and upload your image or take a photo of that area.</p>
+                                <span class="req_statement cg-1">Photos must be JPEG and less than 10 MB
+            each or you can email your photos &amp; info to <a href="mailto:webestimating@calibercollision.com" class="cg-blue">webestimating@calibercollision.com.</a></span>
+                            <div class="ccc-modal-action">
+                                <a href="#0" class="trigger" data-type="modal-trigger"><span class="camera-icon"></span>View Sample Damage Photos</a>
+                                <span class="ccc-modal-bg"></span>
+
+                            </div>
+
+                            <div class="ccc-modal">
+                                <div class="ccc-modal-content">
+
+                                    <div class="damage-photos">
+                                        <h1>Sample of Damage Photos</h1>
+                                        <div class="photo-group">
+                                            <div class="photo-head"><h3>3ft. Away</h3><h3>3ft. Away</h3></div>
+                                            <div class="damage-photo"><img src="/img/damage/collision10.jpg" alt=""></div>
+                                            <div class="damage-photo"><img src="/img/damage/collision11.jpg" alt=""></div>
+                                            <div class="damage-photo"><img src="/img/damage/collision9.jpg" alt=""></div>
+                                            <div class="damage-photo"><img src="/img/damage/collision12.jpg" alt=""></div>
+                                        </div>
+                                        <div class="photo-group">
+                                            <div class="photo-head"><h3>5-7ft. Away</h3><h3>Other</h3></div>
+                                            <div class="damage-photo"><img src="/img/damage/collision2.jpg" alt=""></div>
+                                            <div class="damage-photo"><img src="/img/damage/collision4.jpg" alt=""></div>
+                                            <div class="damage-photo"><img src="/img/damage/collision1.jpg" alt=""></div>
+                                            <div class="damage-photo"><img src="/img/damage/collision3.jpg" alt=""></div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <a href="#0" class="ccc-modal-close">Close</a>
+
+
+                        </div>
+
+                        <div id="photo-uploads" class="form-input full">
+
+                            <div class="upload-photo">
+                                <div class="image-upload-wrap required odometer" aria-required="true">
+                                    <input class="file-upload-input odometer" attr="Odometer" image="odometer" name="photo_1" type="file" accept="image/*" value="" required="" aria-required="true">
+                                    <div class="drag-text">
+                                        <h3>Mileage/ Odometer</h3>
+                                    </div>
+                                </div>
+                                <div class="file-upload-content odometer">
+                                    <img class="file-upload-image" id="odometer" src="#" alt="Odometer">
+                                    <div class="image-title-wrap">
+                                        <button type="button" class="remove-image">Remove <span class="close-icon"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="upload-photo">
+                                <div class="image-upload-wrap required licenseplate" aria-required="true">
+                                    <input class="file-upload-input licenseplate" attr="License Plate" image="licenseplate" name="photo_2" type="file" accept="image/*" value="" required="" aria-required="true">
+                                    <div class="drag-text">
+                                        <h3>License Plate</h3>
+                                    </div>
+                                </div>
+                                <div class="file-upload-content licenseplate">
+                                    <img class="file-upload-image" id="licenseplate" src="#" alt="License Plate">
+                                    <div class="image-title-wrap">
+                                        <button type="button" class="remove-image">Remove <span class="close-icon"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="upload-photo">
+                                <div class="image-upload-wrap required vin" aria-required="true">
+                                    <input class="file-upload-input vin" attr="VIN" image="vin" name="photo_3" type="file" accept="image/*" value="" required="" aria-required="true">
+                                    <div class="drag-text">
+                                        <h3>VIN</h3>
+                                    </div>
+                                </div>
+                                <div class="file-upload-content vin">
+                                    <img class="file-upload-image" id="vin" src="#" alt="VIN">
+                                    <div class="image-title-wrap">
+                                        <button type="button" class="remove-image">Remove <span class="close-icon"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="upload-photo">
+                                <div class="image-upload-wrap required closeup" aria-required="true">
+                                    <input class="file-upload-input closeup" attr="Close Up" image="closeup" name="photo_4" type="file" accept="image/*" value="" required="" aria-required="true">
+                                    <div class="drag-text">
+                                        <h3>Damage 1 – (Close - Up)</h3>
+                                    </div>
+                                </div>
+                                <div class="file-upload-content closeup">
+                                    <img class="file-upload-image" id="closeup" src="#" alt="Damage 1 – (3 ft Away)">
+                                    <div class="image-title-wrap">
+                                        <button type="button" class="remove-image">Remove <span class="close-icon"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="upload-photo">
+                                <div class="image-upload-wrap required front" aria-required="true">
+                                    <input class="file-upload-input front" attr="Front" image="front" name="photo_5" type="file" accept="image/*" value="" required="" aria-required="true">
+
+                                    <div class="drag-text">
+                                        <h3>Damage 2 – (3 ft Away)</h3>
+                                    </div>
+                                </div>
+                                <div class="file-upload-content front">
+                                    <img class="file-upload-image" id="front" src="#" alt="Damage 2 – (3 ft Away)">
+                                    <div class="image-title-wrap">
+                                        <button type="button" class="remove-image">Remove <span class="close-icon"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="upload-photo">
+                                <div class="image-upload-wrap required wideangle" aria-required="true">
+                                    <input class="file-upload-input wideangle" attr="Wide Angle" image="wideangle" name="photo_6" type="file" accept="image/*" value="" required="" aria-required="true">
+                                    <div class="drag-text">
+                                        <h3>Damage 3 – (5 to 7 ft Away)</h3>
+                                    </div>
+                                </div>
+                                <div class="file-upload-content wideangle">
+                                    <img class="file-upload-image" id="wideangle" src="#" alt="Damage 3 – (5 to 7 ft Away)">
+                                    <div class="image-title-wrap">
+                                        <button type="button" class="remove-image">Remove <span class="close-icon"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn opt-btn">Additional Damage Photos</a>
+
+                            <!-- optional photos -->
+                            <div class="opt-photos">
+                                <div class="upload-photo">
+                                    <div class="image-upload-wrap rightfront">
+                                        <input class="file-upload-input rightfront" attr="Right Front" image="rightfront" name="photo_7" type="file" accept="image/*">
+                                        <div class="drag-text">
+                                            <h3>Damage Other 1</h3>
+                                        </div>
+                                    </div>
+                                    <div class="file-upload-content rightfront">
+                                        <img class="file-upload-image" id="rightfront" src="#" alt="Damage Other 1">
+                                        <div class="image-title-wrap">
+                                            <button type="button" class="remove-image">Remove <span class="close-icon"></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="upload-photo">
+                                    <div class="image-upload-wrap leftfront">
+                                        <input class="file-upload-input leftfront" attr="Left Front" image="leftfront" name="photo_8" type="file" accept="image/*">
+                                        <div class="drag-text">
+                                            <h3>Damage Other 2</h3>
+                                        </div>
+                                    </div>
+                                    <div class="file-upload-content leftfront">
+                                        <img class="file-upload-image" id="leftfront" src="#" alt="Damage Other 2 (LEFT)">
+                                        <div class="image-title-wrap">
+                                            <button type="button" class="remove-image">Remove <span class="close-icon"></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="upload-photo">
+                                    <div class="image-upload-wrap rear">
+                                        <input class="file-upload-input rear" attr="Rear" image="rear" name="photo_9" type="file" accept="image/*">
+                                        <div class="drag-text">
+                                            <h3>Damage Other 3</h3>
+                                        </div>
+                                    </div>
+                                    <div class="file-upload-content rear">
+                                        <img class="file-upload-image" id="rear" src="#" alt="Damage Other 3">
+                                        <div class="image-title-wrap">
+                                            <button type="button" class="remove-image">Remove <span class="close-icon"></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="textfield form-input form-text full">
+                            <textarea class="form-control p-1" id="inputComment" placeholder="Please Describe the Damage" name="comment" rows="4" required="" aria-required="true"></textarea>
+                        </div>
+
+
+                    </div>
+
+
+                </fieldset>
+
+                <h3 id="ccc-form-h-3" tabindex="-1" class="title">Submit</h3>
+                <fieldset id="ccc-form-p-3" role="tabpanel" aria-labelledby="ccc-form-h-3" class="body" aria-hidden="true" style="display: none;">
+                    <!-- <legend>Additional Comments</legend> -->
+                    <!-- Insurance Information -->
+                    <div class="form-container block4" data="Additional Comments">
+                      <!--  <div class="form-input full">
+                            <h4 class="align-left">Has an insurance claim been filed?</h4>
+                            <ul class="ccc-form-list align-left">
+                                <li>
+                                    <input type="radio" name="insurance" id="ccc-radio-Y" value="yes">
+                                    <label for="ccc-radio-Y">Yes</label>
+                                </li>
+
+                                <li>
+                                    <input type="radio" name="insurance" id="ccc-radio-N" value="no">
+                                    <label for="ccc-radio-N">No</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="insurance" id="ccc-radio-NS" value="not sure">
+                                    <label for="ccc-radio-NS">Not Sure</label>
+                                </li>
+
+                            </ul>
+                        </div>-->
+                        <div class="textfield form-input form-text full">
+                            <textarea class="form-control addlComment p-1 mt-2" placeholder="Additional Damage" id="addedComment" name="addlComment" rows="4"></textarea>
+                        </div>
+
+                        <div class="form-input full note"><p class="ta-center cg-1">PLEASE NOTE: Caliber Collision will respond to you quickly upon receiving your submission. The initial estimate is intended to provide a general approximation of repair costs. Caliber’s initial estimate is non-binding and subject to changes following a complete in-person inspection of the vehicle.</p>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <input type="hidden" name="odometer" class="odometer imageFlag" value="0">
+                <input type="hidden" name="licenseplate" class="licenseplate imageFlag" value="0">
+                <input type="hidden" name="vin" class="vin imageFlag" value="0">
+                <input type="hidden" name="front" class="front imageFlag" value="0">
+                <input type="hidden" name="wideangle" class="wideangle imageFlag" value="0">
+                <input type="hidden" name="leftfront" class="leftfront imageFlag" value="0">
+                <input type="hidden" name="rightfront" class="rightfront imageFlag" value="0">
+                <input type="hidden" name="rear" class="rear imageFlag" value="0">
+                <input type="hidden" name="closeup" class="closeup imageFlag" value="0">
+                <input type="hidden" name="aid" id="aid">
+                <input type="hidden" name="attr" id="attr">
+                <input type="hidden" name="insurerID" id="insurerid" value="76">
+				        <input type="hidden" name="insurer" id="insurer" value="Customer Pay">
+            </div>
+<div class="display ta-center tw-book t-4 cg-1 pt-2 caps">Vehicle Information</div>
